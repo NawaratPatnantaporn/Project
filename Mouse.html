@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mouse</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <div href="index.html" class="navbar-brand mx-4 mb-3">
+                    <a href="index.html"><h3 class="text-primary" style="font-size: large;" ><img src="./img/logo.png" alt="" style="width: 80px; height: 80%; border-radius: 50%;"> Storage market</h3></a>
+                </div>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/meow.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">แมว เมี๊ยว</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>ภาพรวม</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-cubes me-2"></i>Stock</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="stock.html" class="dropdown-item">โกดัง 1</a>
+                        </div>
+                    </div>
+                    <a href="Worldwide Sales.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Worldwide Sales</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="bi bi-mouse me-2"></i>Mouse</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="Mouse.html" class="dropdown-item active">Mouse Gaming Logitech</a>
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+            <a href="signin.html" class="nav-item nav-link mt-lg-5" >Log Out</a>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">ข้อความ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow1.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว หง่าว</h6>
+                                        <small>2 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow2.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว เหว๋อ</h6>
+                                        <small>3 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow3.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว หลับ</h6>
+                                        <small>5 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">การแจ้งเตือน</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">ต้องการเพิ่ม...ลงสต็อก</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">สินค้า...ขายดีมาก</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">SH-563 จัดส่งสำเร็จ</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/meow.jpg" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">แมว เมี๊ยว</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="adminProfile.html" class="fa fa-user dropdown-item"> My Profile</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="signin.html" class="dropdown-item"><i class="fa fa-sign-out-alt"></i> Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Blank Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row h-100 bg-secondary rounded align-items-center justify-content-center mx-0">
+                    <form class="d-none d-md-flex ms-4 me-auto align-items-center" style="width: 20%; padding: 10px;">
+                        <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                    </form>
+                    <nav class="mb-3">
+                        <a href="#">Stock</a> >
+                        <a href="stock.html">โกดัง 1</a> >
+                        <a href="#">Mouse</a> >
+                        <span class="text-muted">Mouse Gaming Logitech</span>
+                    </nav>
+                    <div class="container-fluid">
+                        <div class="row g-2 mb-2 mb-lg-2">
+                            <div class="col-12 col-md-10 col-lg-12 col-xl-10">
+                                <div class="d-flex flex-column align-items-center justify-content-center rounded-3 text-center p-5 h-100 mx-auto">
+                                    <div class="d-flex flex-row">
+                                        <div class="col-md-6 w-75">
+                                            <img src="./img/Logi-b.jpg">
+                                            <div class="mt-2">
+                                                <button class="btn btn-primary btn-lg me-2" onclick="openEditModal4();"><i class="fas fa-edit" onclick="openEditModal4();"></i>เพิ่มสต็อก</button>
+                                                <button class="btn btn-danger btn-lg" onclick="openDeleteModal4();"><i class="fas fa-trash" onclick="openDeleteModal4();"></i>ลดสต็อก</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 text-start">
+                                            <h3 class="text-primary mb-3 lh-sm">Mouse Gaming Logitech</h3>
+                                            <h4>รหัสสินค้า: SH101</h4>
+                                            <h4>สี: ดำ</h4>
+                                            <h4>ประเภท: เครื่องใช้ไฟฟ้า</h4>
+                                            <h4>สถานที่: โกดัง 1</h4>
+                                            <h4>สต็อก: 40</h4>
+                                            <h4>จอง: 25</h4>
+                                            <h4>คงเหลือ: 15</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row g-2 mb-2 mb-lg-2">
+                            <div class="col-12 col-md-10 col-lg-12 col-xl-10">
+                                <div class="d-flex flex-column align-items-center justify-content-center rounded-3 text-center p-5 h-100 mx-auto">
+                                    <div class="d-flex flex-row">
+                                        <div class="col-md-6 w-75">
+                                            <img src="./img/Logi-w.jpg">
+                                            <div class="mt-2">
+                                                <button class="btn btn-primary btn-lg me-2" onclick="openEditModal5();"><i class="fas fa-edit" onclick="openEditModal4();"></i>เพิ่มสต็อก</button>
+                                                <button class="btn btn-danger btn-lg" onclick="openDeleteModal5();"><i class="fas fa-trash" onclick="openDeleteModal4();"></i>ลดสต็อก</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 text-start">
+                                            <h3 class="text-primary mb-3 lh-sm">Mouse Gaming Logitech</h3>
+                                            <h4>รหัสสินค้า: SH102</h4>
+                                            <h4>สี: ขาว</h4>
+                                            <h4>ประเภท: เครื่องใช้ไฟฟ้า</h4>
+                                            <h4>สถานที่: โกดัง 1</h4>
+                                            <h4>สต็อก: 60</h4>
+                                            <h4>จอง: 35</h4>
+                                            <h4>คงเหลือ: 25</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blank End -->
+        </div>
+        <!-- Content End -->
+
+        <!-- Edit Popup4 Start-->
+        <div class="modal fade" id="editModal4" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="editModalLabel4">เพิ่มสต็อก</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                            <span><b>เพิ่มสต๊อกสีดำ</b></span>
+                            <br>
+                            <input type="number">
+                            <br>
+                            <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                            <br>
+                            <input type="text" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmEdit();">ตกลง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Popup4 End-->
+
+        <!-- Delete Popup4 Start -->
+        <div class="modal fade" id="deleteModal4" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="deleteModalLabel4">ลดสต็อก</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                        <span><b>ลดสต็อกสีดำ</b></span>
+                        <br>
+                        <input type="number">
+                        <br>
+                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                        <br>
+                        <input type="text" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete();">ตกลง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Delete Popup4 End -->
+
+        <!-- Edit Popup5 Start-->
+        <div class="modal fade" id="editModal5" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="editModalLabel5">เพิ่มสต็อก</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                            <span><b>เพิ่มสต๊อกสีขาว</b></span>
+                            <br>
+                            <input type="number">
+                            <br>
+                            <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                            <br>
+                            <input type="text" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                        <button type="button" class="btn btn-primary" onclick="confirmEdit();">ตกลง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Popup5 End-->
+
+        <!-- Delete Popup5 Start -->
+        <div class="modal fade" id="deleteModal5" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-primary" id="deleteModalLabel5">ลดสต็อก</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                        <span><b>ลดสต็อกขาว</b></span>
+                        <br>
+                        <input type="number">
+                        <br>
+                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                        <br>
+                        <input type="text" style="width: 100%;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete();">ตกลง</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Delete Popup5 End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stock</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <div class="navbar bg-secondary navbar-dark">
+                <div href="index.html" class="navbar-brand mx-4 mb-3">
+                    <a href="index.html"><h3 class="text-primary" style="font-size: large;" ><img src="./img/logo.png" alt="" style="width: 80px; height: 80%; border-radius: 50%;"> Storage market</h3></a>
+                </div>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/meow.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">แมว เมี๊ยว</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>ภาพรวม</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-cubes me-2"></i>Stock</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="stock.html" class="dropdown-item active">โกดัง 1</a>
+                        </div>
+                    </div>
+                    <a href="Worldwide Sales.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Worldwide Sales</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-mouse me-2"></i>Mouse</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="Mouse.html" class="dropdown-item active">Mouse Gaming Logitech</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="signin.html" class="nav-item nav-link mt-lg-5" >Log Out</a>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">ข้อความ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow1.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว หง่าว</h6>
+                                        <small>2 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow2.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว เหว๋อ</h6>
+                                        <small>3 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/meow3.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">ข้อใหม่จาก แมว หลับ</h6>
+                                        <small>5 ชม. ที่ผ่านมา</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">การแจ้งเตือน</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">ต้องการเพิ่ม...ลงสต็อก</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">สินค้า...ขายดีมาก</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">SH-563 จัดส่งสำเร็จ</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/meow.jpg" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">แมว เมี๊ยว</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="signin.html" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Stock Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row vh-100 bg-secondary rounded align-items-center justify-content-center mx-0">
+                    <form class="d-none d-md-flex ms-4 me-auto align-items-center" style="width: 20%; padding: 10px">
+                        <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                    </form>
+                    <nav class="mb-0">
+                        <span class="text-primary">Stock</span> >
+                        <span class="text-muted">โกดัง 1</span>
+                    </nav>
+                    <div class="col-md-8 text-center">
+                        <h3>จัดการสินค้า</h3>
+                        <!-- Container Table star -->
+                            <div class="table-container overflow-auto">
+                                <!-- Table Start -->
+                                <table class="table table-striped table-responsive table-bordered mt-4 ">
+                                    <thead>
+                                        <tr class="text-center">
+                                        <th rowspan="2">สินค้า</th>
+                                        <th rowspan="2">รหัสสินค้า &nbsp;</th>
+                                        <th rowspan="2" class="center-text">ชื่อสินค้า &nbsp;</th>
+                                        <th rowspan="2" class="center-text">ราคา &nbsp;</th>
+                                        <th rowspan="2">สต็อก &nbsp;</th>
+                                        <th rowspan="2">จอง &nbsp;</th>
+                                        <th rowspan="2">คงเหลือ &nbsp;</th>
+                                        <th rowspan="2">เพิ่ม/ลด สต็อก &nbsp;</th>
+                                    </thead>
+                                <tbody>
+                                <!-- Example data, replace with your actual data -->
+                                <tr>
+                                    <td><img src="./img/Logi.jpg" style="width: 50px;"></td>
+                                    <td>SH100
+                                        <br>SH101
+                                        <br>SH102
+                                    </td>
+                                    <td class="text-start">
+                                        <a href="Mouse.html" style="font-size: 13px;">Mouse Gaming Logitech</a>
+                                        <br>ดำ
+                                        <br>ขาว
+                                    </td>
+                                    <td><p class="text-primary">1,690&#3647;</p></td>
+                                    <td><span class="text-primary">100</span>
+                                        <br><span>40</span>
+                                        <br><span>60</span>
+                                    </td>
+                                    <td><span class="text-primary">60</span>
+                                        <br>25
+                                        <br>35
+                                    </td>
+                                    <td><span class="text-primary" id="span_SH100">40</span>
+                                        <br><span id="span_SH101">15</span>
+                                        <br><span id="span_SH102">25</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fas fa-edit" onclick="openEditModal();"></i></button>
+                                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash" onclick="openDeleteModal();"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/Logi-WH.png" style="width: 50px;"></td>
+                                    <td>SH110
+                                        <br>SH111
+                                        <br>SH112
+                                    </td>
+                                    <td class="text-start">
+                                        <a href="#" style="font-size: 13px;">LOGITECH WIRELESS LIGHTSPEED GAMING HEADSET</a>
+                                        <br>ดำ
+                                        <br>ขาว
+                                    </td>
+                                    <td><p class="text-primary">4,790&#3647;</p></td>
+                                    <td><span class="text-primary">80</span>
+                                        <br>35
+                                        <br>45
+                                    </td>
+                                    <td><span class="text-primary">50</span>
+                                        <br>25
+                                        <br>25
+                                    </td>
+                                    <td><span class="text-primary" id="span_SH110">30</span>
+                                        <br><span id="span_SH111">10</span>
+                                        <br><span id="span_SH112">20</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" onclick="openEditModal5();"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" onclick="openDeleteModal5();"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/F.O.G.png" style="width: 50px;"></td>
+                                    <td>SH120
+                                        <br>SH121
+                                        <br>SH122
+                                        <br>SH123
+                                        <br>SH124
+                                    </td>
+                                    <td class="text-start">
+                                        <a href="#" style="font-size: 13px;">Fear of God - Hoodie</a>
+                                        <br>S
+                                        <br>M
+                                        <br>L
+                                        <br>XL
+                                    </td>
+                                    <td><p class="text-primary">3,720&#3647;</p></td>
+                                    <td><span class="text-primary">385</span>
+                                        <br>87
+                                        <br>83
+                                        <br>123
+                                        <br>92
+                                    </td>
+                                    <td><span class="text-primary">171</span>
+                                        <br>32
+                                        <br>35
+                                        <br>55
+                                        <br>49
+                                    </td>
+                                    <td><span class="text-primary" id="span_SH120">214</span>
+                                        <br><span id="span_SH121">55</span>
+                                        <br><span id="span_SH122">48</span>
+                                        <br><span id="span_SH123">68</span>
+                                        <br><span id="span_SH124">43</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" onclick="openEditModal2();"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" onclick="openDeleteModal2();"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/joy.png" style="width: 50px;"></td>
+                                    <td>SH130
+                                        <br>SH131
+                                        <br>SH132
+                                        <br>SH133
+                                        <br>SH134
+                                        <br>SH135
+                                        <br>SH136
+                                    </td>
+                                    <td class="text-start">
+                                        <a href="#" style="font-size: 13px;">Joy Ps-5</a>
+                                        <br>ดำ
+                                        <br>ขาว
+                                        <br>ม่วง
+                                        <br>ฟ้า
+                                        <br>แดง
+                                        <br>ชมพู
+                                    </td>
+                                    <td><p class="text-primary">2,390&#3647;</p></td>
+                                    <td><span class="text-primary">148</span>
+                                        <br>25
+                                        <br>15
+                                        <br>35
+                                        <br>15
+                                        <br>28
+                                        <br>30
+                                    </td>
+                                    <td><span class="text-primary">100</span>
+                                        <br>25
+                                        <br>15
+                                        <br>25
+                                        <br>10
+                                        <br>12
+                                        <br>13
+                                    </td>
+                                    <td><span class="text-primary">48</span>
+                                        <br>0
+                                        <br>0
+                                        <br>10
+                                        <br>5
+                                        <br>16
+                                        <br>17
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" onclick="openEditModal3();"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" onclick="openDeleteModal3();"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/palm-angle.png" style="width: 50px;"></td>
+                                    <td>SH140
+                                        <br>SH141
+                                    </td>
+                                    <td class="text-start">
+                                        <a href="#" style="font-size: 13px;">PALM ANGELS T-Shirt</a>
+                                        <br>ดำ
+                                    </td>
+                                    <td><p class="text-primary">18,298&#3647;</p></td>
+                                    <td><span class="text-primary">15</span>
+                                        <br>15
+                                    </td>
+                                    <td><span class="text-primary">10</span>
+                                        <br>10
+                                    </td>
+                                    <td><span class="text-primary">5</span>
+                                        <br>5
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" onclick="openEditModal4();"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" onclick="openDeleteModal4();"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                        <!-- Table End -->
+                            </div>
+                        <!-- Container Table End -->
+                            
+
+                        <!-- Edit Popup Start-->
+                        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="editModalLabel">เพิ่มสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>เพิ่มสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary" onclick="confirmEdit();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Popup End-->
+
+                        <!-- Delete Popup Start -->
+                        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="deleteModalLabel">ลดสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>ลดสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delete Popup End -->
+
+                        <!-- Edit Popup2 Start-->
+                        <div class="modal fade" id="editModal2" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="editModalLabel2">เพิ่มสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>เพิ่มสต๊อก S</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อก M</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อก L</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อก XL</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary" onclick="confirmEdit3();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Popup2 End-->
+
+                        <!-- Delete Popup2 Start -->
+                        <div class="modal fade" id="deleteModal2" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="deleteModalLabel2">ลดสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>ลดสต๊อก S</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อก M</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อก L</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อก XL</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete3();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delete Popup2 End -->
+                        
+                        <!-- Edit Popup3 Start-->
+                        <div class="modal fade" id="editModal3" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="editModalLabel3">เพิ่มสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>เพิ่มสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีม่วง</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีฟ้า</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีแดง</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีชมพู</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary"   onclick="confirmEdit4();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Popup3 End-->
+
+                        <!-- Delete Popup3 Start -->
+                        <div class="modal fade" id="deleteModal3" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="deleteModalLabel3">ลดสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>ลดสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีม่วง</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีฟ้า</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีแดง</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีชมพู</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete4();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delete Popup3 End -->
+
+                        <!-- Edit Popup4 Start-->
+                        <div class="modal fade" id="editModal4" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="editModalLabel4">เพิ่มสต็อก</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                            <span><b>เพิ่มสต๊อกสีดำ</b></span>
+                                            <br>
+                                            <input type="text">
+                                            <br>
+                                            <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                            <br>
+                                            <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary" onclick="confirmEdit5();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Popup4 End-->
+
+                        <!-- Delete Popup4 Start -->
+                        <div class="modal fade" id="deleteModal4" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="deleteModalLabel4">ลดสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>ลดสต็อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete5();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delete Popup4 End -->
+
+                        <!-- Edit Popup Start5-->
+                        <div class="modal fade" id="editModal5" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="editModalLabel5">เพิ่มสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>เพิ่มสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>เพิ่มสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-primary" onclick="confirmEdit2();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edit Popup End5-->
+
+                        <!-- Delete Popup Start5 -->
+                        <div class="modal fade" id="deleteModal5" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-primary" id="deleteModalLabel5">ลดสต็อก</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <span><b>ลดสต๊อกสีดำ</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>ลดสต๊อกสีขาว</b></span>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <span><b>หมายเหตุ (เช่น เลขที่เอกสาร)</b></span>
+                                        <br>
+                                        <input type="text" style="width: 100%;">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                                        <button type="button" class="btn btn-danger" onclick="confirmDelete2();">ตกลง</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Delete Popup End5 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
